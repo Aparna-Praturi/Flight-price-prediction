@@ -6071,3 +6071,354 @@ NameError: name 'preprocessor_path' is not defined
 [2025-01-15T12:57:44.302+0000] {logging_mixin.py:190} INFO - [2025-01-15T12:57:44.302+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-01-15T12:57:44.314+0000] {logging_mixin.py:190} INFO - [2025-01-15T12:57:44.313+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
 [2025-01-15T12:57:44.356+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.507 seconds
+[2025-01-15T12:58:14.671+0000] {processor.py:186} INFO - Started process (PID=977) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T12:58:14.672+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T12:58:14.675+0000] {logging_mixin.py:190} INFO - [2025-01-15T12:58:14.674+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T12:58:15.940+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T12:58:16.472+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T12:58:17.104+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T12:58:17.126+0000] {logging_mixin.py:190} INFO - [2025-01-15T12:58:17.125+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T12:58:17.134+0000] {logging_mixin.py:190} INFO - [2025-01-15T12:58:17.134+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T12:58:17.173+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.510 seconds
+[2025-01-15T12:58:47.342+0000] {processor.py:186} INFO - Started process (PID=995) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T12:58:47.343+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T12:58:47.345+0000] {logging_mixin.py:190} INFO - [2025-01-15T12:58:47.345+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T12:58:48.687+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T12:58:49.183+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T12:58:49.846+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T12:58:49.867+0000] {logging_mixin.py:190} INFO - [2025-01-15T12:58:49.866+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T12:58:49.877+0000] {logging_mixin.py:190} INFO - [2025-01-15T12:58:49.877+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T12:58:49.958+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.621 seconds
+[2025-01-15T12:59:20.260+0000] {processor.py:186} INFO - Started process (PID=1013) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T12:59:20.261+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T12:59:20.263+0000] {logging_mixin.py:190} INFO - [2025-01-15T12:59:20.263+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T12:59:21.583+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T12:59:22.085+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T12:59:22.665+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T12:59:22.687+0000] {logging_mixin.py:190} INFO - [2025-01-15T12:59:22.686+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T12:59:22.702+0000] {logging_mixin.py:190} INFO - [2025-01-15T12:59:22.702+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T12:59:22.755+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.499 seconds
+[2025-01-15T12:59:53.038+0000] {processor.py:186} INFO - Started process (PID=1031) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T12:59:53.038+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T12:59:53.041+0000] {logging_mixin.py:190} INFO - [2025-01-15T12:59:53.040+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T12:59:54.457+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T12:59:54.921+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T12:59:55.489+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T12:59:55.505+0000] {logging_mixin.py:190} INFO - [2025-01-15T12:59:55.504+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T12:59:55.516+0000] {logging_mixin.py:190} INFO - [2025-01-15T12:59:55.515+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T12:59:55.550+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.517 seconds
+[2025-01-15T13:00:25.819+0000] {processor.py:186} INFO - Started process (PID=1049) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:00:25.820+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T13:00:25.822+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:00:25.821+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:00:27.049+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T13:00:27.531+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T13:00:28.115+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:00:28.137+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:00:28.137+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T13:00:28.146+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:00:28.146+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T13:00:28.183+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.370 seconds
+[2025-01-15T13:00:58.397+0000] {processor.py:186} INFO - Started process (PID=1067) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:00:58.398+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T13:00:58.400+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:00:58.399+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:00:59.597+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T13:01:00.043+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T13:01:00.624+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:01:00.641+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:01:00.640+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T13:01:00.649+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:01:00.649+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T13:01:00.686+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.294 seconds
+[2025-01-15T13:01:30.891+0000] {processor.py:186} INFO - Started process (PID=1085) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:01:30.892+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T13:01:30.893+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:01:30.893+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:01:32.113+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T13:01:32.576+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T13:01:33.159+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:01:33.176+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:01:33.176+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T13:01:33.184+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:01:33.184+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T13:01:33.217+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.331 seconds
+[2025-01-15T13:02:03.465+0000] {processor.py:186} INFO - Started process (PID=1103) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:02:03.465+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T13:02:03.467+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:02:03.467+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:02:04.840+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T13:02:05.323+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T13:02:05.917+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:02:05.939+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:02:05.939+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T13:02:05.950+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:02:05.949+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T13:02:05.996+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.536 seconds
+[2025-01-15T13:02:36.291+0000] {processor.py:186} INFO - Started process (PID=1121) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:02:36.292+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T13:02:36.294+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:02:36.294+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:02:37.667+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T13:02:38.235+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T13:02:38.804+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:02:38.822+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:02:38.822+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T13:02:38.839+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:02:38.839+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T13:02:38.874+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.587 seconds
+[2025-01-15T13:03:09.082+0000] {processor.py:186} INFO - Started process (PID=1139) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:03:09.083+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T13:03:09.085+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:03:09.085+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:03:10.347+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T13:03:10.804+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T13:03:11.370+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:03:11.390+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:03:11.389+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T13:03:11.403+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:03:11.402+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T13:03:11.440+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.364 seconds
+[2025-01-15T13:03:41.690+0000] {processor.py:186} INFO - Started process (PID=1157) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:03:41.691+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T13:03:41.693+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:03:41.693+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:03:42.998+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T13:03:43.499+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T13:03:44.229+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:03:44.249+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:03:44.249+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T13:03:44.258+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:03:44.257+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T13:03:44.292+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.606 seconds
+[2025-01-15T13:04:14.560+0000] {processor.py:186} INFO - Started process (PID=1175) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:04:14.561+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T13:04:14.563+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:04:14.563+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:04:15.781+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T13:04:16.247+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T13:04:16.825+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:04:16.841+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:04:16.841+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T13:04:16.849+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:04:16.849+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T13:04:16.887+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.331 seconds
+[2025-01-15T13:04:47.166+0000] {processor.py:186} INFO - Started process (PID=1193) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:04:47.167+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T13:04:47.169+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:04:47.168+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:04:48.519+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T13:04:49.054+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T13:04:49.661+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:04:49.678+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:04:49.677+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T13:04:49.685+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:04:49.685+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T13:04:49.721+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.563 seconds
+[2025-01-15T13:05:19.940+0000] {processor.py:186} INFO - Started process (PID=1211) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:05:19.941+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T13:05:19.944+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:05:19.943+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:05:21.160+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T13:05:21.648+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T13:05:22.280+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:05:22.301+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:05:22.301+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T13:05:22.310+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:05:22.309+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T13:05:22.347+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.411 seconds
+[2025-01-15T13:05:52.583+0000] {processor.py:186} INFO - Started process (PID=1229) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:05:52.584+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T13:05:52.586+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:05:52.585+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:05:53.878+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T13:05:54.403+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T13:05:54.964+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:05:54.980+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:05:54.979+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T13:05:54.990+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:05:54.989+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T13:05:55.026+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.446 seconds
+[2025-01-15T13:06:25.356+0000] {processor.py:186} INFO - Started process (PID=1247) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:06:25.356+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T13:06:25.359+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:06:25.358+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:06:27.077+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T13:06:27.600+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T13:06:28.189+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:06:28.211+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:06:28.210+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T13:06:28.226+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:06:28.225+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T13:06:28.266+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.916 seconds
+[2025-01-15T13:06:58.523+0000] {processor.py:186} INFO - Started process (PID=1265) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:06:58.524+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T13:06:58.526+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:06:58.526+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:06:59.767+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T13:07:00.249+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T13:07:00.837+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:07:00.859+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:07:00.858+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T13:07:00.868+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:07:00.868+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T13:07:00.903+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.384 seconds
+[2025-01-15T13:07:31.100+0000] {processor.py:186} INFO - Started process (PID=1283) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:07:31.101+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T13:07:31.103+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:07:31.102+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:07:32.313+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T13:07:32.774+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T13:07:33.402+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:07:33.418+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:07:33.418+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T13:07:33.427+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:07:33.427+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T13:07:33.461+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.366 seconds
+[2025-01-15T13:08:03.681+0000] {processor.py:186} INFO - Started process (PID=1301) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:08:03.681+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T13:08:03.683+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:08:03.683+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:08:05.104+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T13:08:05.575+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T13:08:06.216+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:08:06.233+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:08:06.233+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T13:08:06.242+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:08:06.242+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T13:08:06.277+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.602 seconds
+[2025-01-15T13:08:36.608+0000] {processor.py:186} INFO - Started process (PID=1319) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:08:36.610+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T13:08:36.612+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:08:36.612+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:08:38.083+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T13:08:38.559+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T13:08:39.158+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:08:39.174+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:08:39.174+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T13:08:39.183+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:08:39.182+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T13:08:39.219+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.616 seconds
+[2025-01-15T13:09:09.498+0000] {processor.py:186} INFO - Started process (PID=1337) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:09:09.499+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T13:09:09.501+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:09:09.500+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:09:10.730+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T13:09:11.193+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T13:09:11.787+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:09:11.805+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:09:11.804+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T13:09:11.819+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:09:11.819+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T13:09:11.852+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.359 seconds
+[2025-01-15T13:09:42.071+0000] {processor.py:186} INFO - Started process (PID=1355) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:09:42.072+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T13:09:42.075+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:09:42.074+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:09:43.296+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T13:09:43.760+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T13:09:44.478+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:09:44.495+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:09:44.494+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T13:09:44.506+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:09:44.506+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T13:09:44.543+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.476 seconds
+[2025-01-15T13:10:14.745+0000] {processor.py:186} INFO - Started process (PID=1373) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:10:14.746+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T13:10:14.748+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:10:14.748+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:10:16.018+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T13:10:16.493+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T13:10:17.055+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:10:17.075+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:10:17.074+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T13:10:17.083+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:10:17.082+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T13:10:17.122+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.383 seconds
+[2025-01-15T13:10:47.335+0000] {processor.py:186} INFO - Started process (PID=1391) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:10:47.336+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T13:10:47.338+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:10:47.338+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:10:48.628+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T13:10:49.091+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T13:10:49.701+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:10:49.719+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:10:49.719+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T13:10:49.729+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:10:49.729+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T13:10:49.763+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.433 seconds
+[2025-01-15T13:11:20.023+0000] {processor.py:186} INFO - Started process (PID=1409) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:11:20.023+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T13:11:20.026+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:11:20.025+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:11:21.419+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T13:11:21.936+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T13:11:22.574+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:11:22.594+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:11:22.594+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T13:11:22.603+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:11:22.603+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T13:11:22.651+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.633 seconds
+[2025-01-15T13:11:52.888+0000] {processor.py:186} INFO - Started process (PID=1427) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:11:52.889+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T13:11:52.890+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:11:52.890+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:11:54.226+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T13:11:54.743+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T13:11:55.329+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:11:55.345+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:11:55.345+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T13:11:55.353+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:11:55.353+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T13:11:55.394+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.511 seconds
+[2025-01-15T13:12:25.690+0000] {processor.py:186} INFO - Started process (PID=1445) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:12:25.691+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T13:12:25.693+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:12:25.693+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:12:26.892+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T13:12:27.377+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T13:12:27.969+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:12:27.985+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:12:27.985+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T13:12:27.994+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:12:27.994+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T13:12:28.075+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.392 seconds
+[2025-01-15T13:12:58.321+0000] {processor.py:186} INFO - Started process (PID=1463) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:12:58.322+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T13:12:58.324+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:12:58.324+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:12:59.594+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T13:13:00.063+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T13:13:00.658+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:13:00.682+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:13:00.681+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T13:13:00.696+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:13:00.696+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T13:13:00.735+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.418 seconds
+[2025-01-15T13:13:30.998+0000] {processor.py:186} INFO - Started process (PID=1481) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:13:30.999+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T13:13:31.001+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:13:31.001+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:13:32.202+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T13:13:32.659+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T13:13:33.202+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:13:33.221+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:13:33.218+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T13:13:33.229+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:13:33.229+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T13:13:33.262+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.269 seconds
+[2025-01-15T13:14:03.468+0000] {processor.py:186} INFO - Started process (PID=1499) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:14:03.469+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T13:14:03.471+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:14:03.471+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:14:04.853+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T13:14:05.326+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T13:14:05.921+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:14:05.941+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:14:05.941+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T13:14:05.950+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:14:05.950+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T13:14:05.985+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.521 seconds
+[2025-01-15T13:14:36.249+0000] {processor.py:186} INFO - Started process (PID=1517) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:14:36.250+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T13:14:36.251+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:14:36.251+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:14:37.473+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T13:14:37.932+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T13:14:38.518+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:14:38.534+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:14:38.533+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T13:14:38.542+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:14:38.542+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T13:14:38.576+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.331 seconds
+[2025-01-15T13:15:08.817+0000] {processor.py:186} INFO - Started process (PID=1535) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:15:08.818+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T13:15:08.820+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:15:08.820+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:15:10.281+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T13:15:10.746+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T13:15:11.302+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:15:11.320+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:15:11.319+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T13:15:11.328+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:15:11.328+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T13:15:11.361+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.548 seconds
+[2025-01-15T13:15:41.592+0000] {processor.py:186} INFO - Started process (PID=1553) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:15:41.593+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T13:15:41.595+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:15:41.595+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:15:42.875+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T13:15:43.373+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T13:15:44.006+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:15:44.029+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:15:44.028+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T13:15:44.038+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:15:44.038+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T13:15:44.088+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.501 seconds
+[2025-01-15T13:16:41.311+0000] {processor.py:186} INFO - Started process (PID=1708) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:16:41.314+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T13:16:41.321+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:16:41.320+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:16:42.859+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T13:16:43.333+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T13:16:43.911+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:16:43.932+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:16:43.932+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T13:16:43.947+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:16:43.947+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T13:16:43.987+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.689 seconds
+[2025-01-15T13:16:57.614+0000] {processor.py:186} INFO - Started process (PID=1726) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:16:57.615+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T13:16:57.617+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:16:57.617+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:16:58.909+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T13:16:59.458+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T13:17:00.127+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:17:00.239+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:17:00.239+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T13:17:00.253+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:17:00.253+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T13:17:00.310+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.702 seconds
+[2025-01-15T13:17:31.417+0000] {processor.py:186} INFO - Started process (PID=1744) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:17:31.418+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T13:17:31.421+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:17:31.421+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:17:32.730+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T13:17:33.221+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T13:17:33.828+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:17:33.848+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:17:33.845+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T13:17:33.856+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:17:33.856+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T13:17:33.889+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.478 seconds
+[2025-01-15T13:18:23.910+0000] {processor.py:186} INFO - Started process (PID=1899) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:18:23.911+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T13:18:23.913+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:18:23.913+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:18:25.323+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T13:18:25.788+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T13:18:26.370+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:18:26.388+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:18:26.388+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T13:18:26.397+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:18:26.396+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T13:18:26.426+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.523 seconds
+[2025-01-15T13:18:56.643+0000] {processor.py:186} INFO - Started process (PID=1917) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:18:56.644+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T13:18:56.646+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:18:56.646+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:18:57.959+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T13:18:58.439+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T13:18:59.028+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:18:59.045+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:18:59.045+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T13:18:59.053+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:18:59.053+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T13:18:59.087+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.449 seconds
+[2025-01-15T13:19:14.048+0000] {processor.py:186} INFO - Started process (PID=1935) to work on /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:19:14.049+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/flight-price-pred-dag.py for tasks to queue
+[2025-01-15T13:19:14.051+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:19:14.050+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:19:15.489+0000] {logging_mixin.py:190} INFO - Data loaded successfully!
+[2025-01-15T13:19:16.016+0000] {logging_mixin.py:190} INFO - There are no missing values present
+[2025-01-15T13:19:16.654+0000] {processor.py:925} INFO - DAG(s) 'travel_price_prediction' retrieved from /opt/airflow/dags/flight-price-pred-dag.py
+[2025-01-15T13:19:16.674+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:19:16.673+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T13:19:16.684+0000] {logging_mixin.py:190} INFO - [2025-01-15T13:19:16.684+0000] {dag.py:4180} INFO - Setting next_dagrun for travel_price_prediction to None, run_after=None
+[2025-01-15T13:19:16.728+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/flight-price-pred-dag.py took 2.685 seconds

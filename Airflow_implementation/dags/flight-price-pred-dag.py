@@ -294,7 +294,7 @@ decision_tree_task = PythonOperator(
 )
 
 linear_regression_task = PythonOperator(
-    task_id='random_forest_task',
+    task_id='linear_regression_task',
     python_callable=linearregression_model.predict,
     dag=dag,
 	execution_timeout=timedelta(minutes=30),
