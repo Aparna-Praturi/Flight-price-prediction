@@ -1,0 +1,21 @@
+
+version: "1"
+services: 
+
+  sleek-airflow:
+
+    image: airflowdocker:latest
+
+    volumes: 
+
+      - ./airflow:/opt/airflow
+      - ./dags:/opt/airflow/dags
+      - ../data:/opt/airflow/data
+      - ../models:/opt/airflow/models
+      - ../py_files:/opt/airflow/py_files
+
+    ports:
+
+      - "8080:8080"
+
+    command: airflow standalone

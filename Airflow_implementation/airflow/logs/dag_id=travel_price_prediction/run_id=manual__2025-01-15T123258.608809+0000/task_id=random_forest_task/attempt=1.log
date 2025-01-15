@@ -1,0 +1,74 @@
+[2025-01-15T12:34:31.480+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-01-15T12:34:31.494+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: travel_price_prediction.random_forest_task manual__2025-01-15T12:32:58.608809+00:00 [queued]>
+[2025-01-15T12:34:31.515+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: travel_price_prediction.random_forest_task manual__2025-01-15T12:32:58.608809+00:00 [queued]>
+[2025-01-15T12:34:31.515+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 2
+[2025-01-15T12:34:31.581+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): random_forest_task> on 2025-01-15 12:32:58.608809+00:00
+[2025-01-15T12:34:31.596+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'travel_price_prediction', 'random_forest_task', 'manual__2025-01-15T12:32:58.608809+00:00', '--job-id', '21', '--raw', '--subdir', 'DAGS_FOLDER/flight-price-pred-dag.py', '--cfg-path', '/tmp/tmpiqx6xo1n']
+[2025-01-15T12:34:31.598+0000] {standard_task_runner.py:105} INFO - Job 21: Subtask random_forest_task
+[2025-01-15T12:34:31.599+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=182) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-01-15T12:34:31.600+0000] {standard_task_runner.py:72} INFO - Started process 199 to run task
+[2025-01-15T12:34:31.682+0000] {task_command.py:467} INFO - Running <TaskInstance: travel_price_prediction.random_forest_task manual__2025-01-15T12:32:58.608809+00:00 [running]> on host 8cbc293a4ff9
+[2025-01-15T12:34:31.817+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='admin' AIRFLOW_CTX_DAG_ID='travel_price_prediction' AIRFLOW_CTX_TASK_ID='random_forest_task' AIRFLOW_CTX_EXECUTION_DATE='2025-01-15T12:32:58.608809+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-01-15T12:32:58.608809+00:00'
+[2025-01-15T12:34:31.818+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-01-15T12:34:31.850+0000] {logging_mixin.py:190} INFO - Fitting 5 folds for each of 8 candidates, totalling 40 fits
+[2025-01-15T12:34:32.097+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=10, max_features=10, max_leaf_nodes=50, random_state=42; total time=   0.2s
+[2025-01-15T12:34:32.269+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=10, max_features=10, max_leaf_nodes=50, random_state=42; total time=   0.2s
+[2025-01-15T12:34:32.520+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=10, max_features=10, max_leaf_nodes=50, random_state=42; total time=   0.2s
+[2025-01-15T12:34:32.850+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=10, max_features=10, max_leaf_nodes=50, random_state=42; total time=   0.3s
+[2025-01-15T12:34:33.115+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=10, max_features=10, max_leaf_nodes=50, random_state=42; total time=   0.3s
+[2025-01-15T12:34:33.308+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=10, max_features=10, max_leaf_nodes=100, random_state=42; total time=   0.2s
+[2025-01-15T12:34:33.518+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=10, max_features=10, max_leaf_nodes=100, random_state=42; total time=   0.2s
+[2025-01-15T12:34:33.727+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=10, max_features=10, max_leaf_nodes=100, random_state=42; total time=   0.2s
+[2025-01-15T12:34:33.905+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=10, max_features=10, max_leaf_nodes=100, random_state=42; total time=   0.2s
+[2025-01-15T12:34:34.132+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=10, max_features=10, max_leaf_nodes=100, random_state=42; total time=   0.2s
+[2025-01-15T12:34:34.428+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=10, max_features=20, max_leaf_nodes=50, random_state=42; total time=   0.3s
+[2025-01-15T12:34:34.697+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=10, max_features=20, max_leaf_nodes=50, random_state=42; total time=   0.3s
+[2025-01-15T12:34:34.980+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=10, max_features=20, max_leaf_nodes=50, random_state=42; total time=   0.3s
+[2025-01-15T12:34:35.338+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=10, max_features=20, max_leaf_nodes=50, random_state=42; total time=   0.4s
+[2025-01-15T12:34:35.639+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=10, max_features=20, max_leaf_nodes=50, random_state=42; total time=   0.3s
+[2025-01-15T12:34:35.987+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=10, max_features=20, max_leaf_nodes=100, random_state=42; total time=   0.3s
+[2025-01-15T12:34:36.377+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=10, max_features=20, max_leaf_nodes=100, random_state=42; total time=   0.4s
+[2025-01-15T12:34:36.735+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=10, max_features=20, max_leaf_nodes=100, random_state=42; total time=   0.4s
+[2025-01-15T12:34:37.062+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=10, max_features=20, max_leaf_nodes=100, random_state=42; total time=   0.3s
+[2025-01-15T12:34:37.450+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=10, max_features=20, max_leaf_nodes=100, random_state=42; total time=   0.4s
+[2025-01-15T12:34:37.615+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=14, max_features=10, max_leaf_nodes=50, random_state=42; total time=   0.2s
+[2025-01-15T12:34:37.775+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=14, max_features=10, max_leaf_nodes=50, random_state=42; total time=   0.2s
+[2025-01-15T12:34:37.942+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=14, max_features=10, max_leaf_nodes=50, random_state=42; total time=   0.2s
+[2025-01-15T12:34:38.114+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=14, max_features=10, max_leaf_nodes=50, random_state=42; total time=   0.2s
+[2025-01-15T12:34:38.302+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=14, max_features=10, max_leaf_nodes=50, random_state=42; total time=   0.2s
+[2025-01-15T12:34:38.497+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=14, max_features=10, max_leaf_nodes=100, random_state=42; total time=   0.2s
+[2025-01-15T12:34:38.701+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=14, max_features=10, max_leaf_nodes=100, random_state=42; total time=   0.2s
+[2025-01-15T12:34:38.953+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=14, max_features=10, max_leaf_nodes=100, random_state=42; total time=   0.2s
+[2025-01-15T12:34:39.186+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=14, max_features=10, max_leaf_nodes=100, random_state=42; total time=   0.2s
+[2025-01-15T12:34:39.381+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=14, max_features=10, max_leaf_nodes=100, random_state=42; total time=   0.2s
+[2025-01-15T12:34:39.672+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=14, max_features=20, max_leaf_nodes=50, random_state=42; total time=   0.3s
+[2025-01-15T12:34:39.944+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=14, max_features=20, max_leaf_nodes=50, random_state=42; total time=   0.3s
+[2025-01-15T12:34:40.224+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=14, max_features=20, max_leaf_nodes=50, random_state=42; total time=   0.3s
+[2025-01-15T12:34:40.571+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=14, max_features=20, max_leaf_nodes=50, random_state=42; total time=   0.3s
+[2025-01-15T12:34:40.872+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=14, max_features=20, max_leaf_nodes=50, random_state=42; total time=   0.3s
+[2025-01-15T12:34:41.287+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=14, max_features=20, max_leaf_nodes=100, random_state=42; total time=   0.4s
+[2025-01-15T12:34:41.707+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=14, max_features=20, max_leaf_nodes=100, random_state=42; total time=   0.4s
+[2025-01-15T12:34:42.068+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=14, max_features=20, max_leaf_nodes=100, random_state=42; total time=   0.4s
+[2025-01-15T12:34:42.488+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=14, max_features=20, max_leaf_nodes=100, random_state=42; total time=   0.4s
+[2025-01-15T12:34:43.240+0000] {logging_mixin.py:190} INFO - [CV] END max_depth=14, max_features=20, max_leaf_nodes=100, random_state=42; total time=   0.7s
+[2025-01-15T12:34:43.772+0000] {logging_mixin.py:190} INFO - Train Set Metrics:
+[2025-01-15T12:34:43.773+0000] {logging_mixin.py:190} INFO - ----------------------------------------------
+[2025-01-15T12:34:43.784+0000] {logging_mixin.py:190} INFO - MSE is 1957.1893811193254
+[2025-01-15T12:34:43.785+0000] {logging_mixin.py:190} INFO - R2 score is 0.985074399328493
+[2025-01-15T12:34:43.786+0000] {logging_mixin.py:190} INFO - Test Set Metrics
+[2025-01-15T12:34:43.786+0000] {logging_mixin.py:190} INFO - ----------------------------------------------
+[2025-01-15T12:34:43.791+0000] {logging_mixin.py:190} INFO - MSE is 1971.8623612523797
+[2025-01-15T12:34:43.792+0000] {logging_mixin.py:190} INFO - R2 score is 0.9850259349985842
+[2025-01-15T12:34:43.797+0000] {logging_mixin.py:190} INFO - The top 5 rows of actual vs predicted values
+[2025-01-15T12:34:43.814+0000] {logging_mixin.py:190} INFO -     Actual Value  Predicted Value
+0        481.42       475.535633
+1       1124.11      1110.704318
+2       1174.97      1188.667605
+3        898.67       884.637434
+4        959.91       906.482251
+[2025-01-15T12:34:43.815+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-01-15T12:34:43.825+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-01-15T12:34:43.825+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=travel_price_prediction, task_id=random_forest_task, run_id=manual__2025-01-15T12:32:58.608809+00:00, execution_date=20250115T123258, start_date=20250115T123431, end_date=20250115T123443
+[2025-01-15T12:34:43.932+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-01-15T12:34:43.944+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-01-15T12:34:43.946+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

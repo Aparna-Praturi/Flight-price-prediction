@@ -1,0 +1,9 @@
+# Ignore the Airflow_implementation folder
+Airflow_implementation/
+
+# Ignore log files
+*.log
+logs/
+
+# Ignore temporary files
+*.tmp

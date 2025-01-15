@@ -1,0 +1,4 @@
+# Ignore log files and temporary files
+**/logs/
+*.log
+*.pid
