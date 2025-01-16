@@ -2,3 +2,4 @@
 **/logs/
 *.log
 *.pid
+Airflow_implementation/airflow/airflow.db
