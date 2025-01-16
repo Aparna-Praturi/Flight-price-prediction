@@ -225,7 +225,7 @@ class Model_training:
       bestModel_score = test_score
       bestModel_name = name
 
-    print(f"Best model: {bestModel_name} with score: {bestModel_score}")  # print the best model
+    print(f"Best model: {bestModel_name} with Score: {bestModel_score}")  # print the best model
 
     return bestModel, bestModel_name
 
