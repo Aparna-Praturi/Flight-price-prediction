@@ -243,7 +243,7 @@ class Model_training:
       grid_search.fit(X_train, y_train)
 
       best_params = grid_search.best_estimator_  # find best tuning
-      best_params.fit(X_train, y_train)   # fit the best tuned model
+      #best_params.fit(X_train, y_train)   # fit the best tuned model
 
       y_pred_train_bestparam = best_params.predict(X_train) # predict using the best tuned model
       y_pred_test_bestparam = best_params.predict(X_test)
