@@ -1,5 +1,7 @@
 # Ignore the Airflow_implementation folder
-Airflow_implementation/
+Airflow_Price-prediction/
+MLFow_Price-prediction/
+mlruns/
 
 # Ignore log files
 *.log
