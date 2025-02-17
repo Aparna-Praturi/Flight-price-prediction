@@ -176,7 +176,7 @@ def predict_price():
         try:
             prediction = predict(data=data, model=loaded_lr_model, preprocessor=loaded_preprocessor,dist_dict= loaded_distance_dict )
             prediction_value = round(prediction[0].item(), 2)
-            return  jsonify({'Predicted price': prediction_value})
+            return  jsonify({'Predicted Price': prediction_value})
         
         except ValueError as e:
             # If an error occurs, pass the error message to the template
