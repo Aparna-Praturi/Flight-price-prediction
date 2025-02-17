@@ -73,7 +73,7 @@ if st.button('Predict gender'):
      results_df = pd.DataFrame(list(flattened_results.items()), columns=['Name', 'Gender'])
      
      
-     st.write("Gender Prediction Results:")
+     st.write("Gender Identification Results:")
      st.table(results_df)
 
 
