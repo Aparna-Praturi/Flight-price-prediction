@@ -128,9 +128,9 @@ class Model_training:
     self.tune_best_model = tune_best_model
     self.param_grids = param_grids if param_grids else {}
     self. evaluation_metrics = pd.DataFrame(index =['train_MSE', 'test_MSE', 'train_MAE', 'test_MAE','train_R2', 'test_R2'])
-
+ 
+  # Function to plot residuals
   def plot(self, y_test, y_pred_test):
-    # Function to plot residuals
      residuals = y_test - y_pred_test
      fig, axs = plt.subplots(1, 2, figsize=(12, 4))  # plot residuals
      axs[0].scatter(y_pred_test, y_test)
@@ -148,7 +148,8 @@ class Model_training:
      plt.tight_layout()
      plt.show()
      return
-  
+
+  # Function to calculate evaluation metrics
   def cal_eval(self,y,y_pred):
      mae = mean_absolute_error(y,y_pred)
      mse = mean_squared_error(y,y_pred)
@@ -156,7 +157,7 @@ class Model_training:
      return mae, mse, r2
 
 
-  ## Find best model
+  # function to find best model
   def find_model(self, X_train, y_train, X_test, y_test):   ## 1. Define function to find best model
     # initialise best model parameters
     bestModel_score = float('inf')  
@@ -192,45 +193,45 @@ class Model_training:
       bestModel_name = name
 
     print(f"Best model: {bestModel_name} with Score: {bestModel_score}")  # print the best model
-    return bestModel, bestModel_name
+    #return bestModel, bestModel_name
 
- ## Tune hyperparameters for best model
-  def tune_bestModel(self, bestModel_name, bestModel, X_train, y_train, X_test, y_test):   ##   Tune hyperparameters for best model
+  # Tune hyperparameters for best model
+  #def tune_bestModel(self, bestModel_name, bestModel, X_train, y_train, X_test, y_test):   
     if (bestModel_name in self.param_grids) and self.tune_best_model:
       print(f"Tuning hyperparameters for {bestModel_name}....")
 
       param_grid = self.param_grids[bestModel_name]
       grid_search = GridSearchCV(bestModel, param_grid, cv=self.cv, scoring='neg_mean_squared_error')# implement grid search
       grid_search.fit(X_train, y_train)
-      best_params = grid_search.best_estimator_  # find best tuning
+      best_model = grid_search.best_estimator_  # find best tuning
       
       # predict using the best tuned model
-      y_pred_train_bestparam = best_params.predict(X_train) 
-      y_pred_test_bestparam = best_params.predict(X_test)
+      y_pred_train_bestparam = best_model.predict(X_train) 
+      y_pred_test_bestparam = best_model.predict(X_test)
 
       # evaluate metrics
       train_score_best_param, train_mse, train_r2 = self.cal_eval(y_train, y_pred_train_bestparam)
       test_score_best_param, test_mse, test_r2 = self.cal_eval(y_test, y_pred_test_bestparam)
-      print(f"Best Hyperparameters for {bestModel_name}: {best_params} with training eroor of {train_score_best_param} and testing error of{ test_score_best_param}")
+      print(f"Best Hyperparameters for {bestModel_name}: {best_model} with training eroor of {train_score_best_param} and testing error of{ test_score_best_param}")
       
       # plot
       self.plot(y_test, y_pred_test_bestparam)
 
       # update evaluation metrics table
       self.evaluation_metrics[f'{bestModel_name}-hyperparameter_tuned '] = [train_score_best_param, test_score_best_param, train_mse, test_mse, train_r2, test_r2]
-      return best_params, self.evaluation_metrics
+      #return best_params, self.evaluation_metrics
 
     else:
+      best_model = bestModel
       print(f"No tuning required for {bestModel_name}")
-      return bestModel, self.evaluation_metrics
+    return bestModel, self.evaluation_metrics
 
- ##  Call the class
-  def __call__(self, X_train, y_train, X_test, y_test):
+  ##  Call the class
+  def  __call__(self, X_train, y_train, X_test, y_test):
      bestModel, bestModel_name = self.find_model(X_train, y_train, X_test, y_test)
-     best_params = self.tune_bestModel(bestModel_name, bestModel, X_train, y_train, X_test, y_test)
-     return best_params, self.evaluation_metrics
+     return bestModel, bestModel_name, self.evaluation_metrics
   
-##---------------------------------------------------------------------------------------------------------------------------------------------------- 
+  
 
 # Defining the path to data file
 path = os.path.join(os.path.dirname(__file__), '..', 'data', 'flights.csv')
@@ -289,10 +290,10 @@ param_grids = { 'Random Forest': {'n_estimators': [50, 100, 200],
 # Splitting the data 
 X_train, X_test, y_train, y_test = extract_train_test(modified_df, test_size=0.25, random_state=42)
 
-# Scaling the train data
+# Fitting the numeric features of  train data
 fit = scale_fit(X_train, num_features, StandardScaler())
 
-# Encoding the train data
+# Encoding(Fitting) the categorical features of train data
 cat_encoder = OneHotEncoder(sparse_output=False, handle_unknown='ignore')
 cat_encoder.fit(modified_df[cat_features])
 

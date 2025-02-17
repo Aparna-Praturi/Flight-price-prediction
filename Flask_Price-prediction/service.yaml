@@ -7,6 +7,6 @@ spec:
     app: flight-price-prediction
   ports:
     - protocol: TCP
-      port: 80         # External port (accessible from outside the cluster)
-      targetPort: 5000  # Internal container port (where the app is listening)
-  type: LoadBalancer  # Expose service externally (use ClusterIP for internal only)
+      port: 80         
+      targetPort: 5000  
+  type: LoadBalancer 
