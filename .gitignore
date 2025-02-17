@@ -3,3 +3,4 @@
 *.log
 *.pid
 Airflow_Price-prediction/airflow/airflow.db
+mlruns

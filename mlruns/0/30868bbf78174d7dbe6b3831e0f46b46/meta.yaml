@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/aparn/OneDrive/Desktop/AB/MLOPS/travel_capstone/mlruns/0/30868bbf78174d7dbe6b3831e0f46b46/artifacts
+end_time: 1739794521925
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 30868bbf78174d7dbe6b3831e0f46b46
+run_name: Decision Tree
+run_uuid: 30868bbf78174d7dbe6b3831e0f46b46
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739794487483
+status: 4
+tags: []
+user_id: aparn

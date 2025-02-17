@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/aparn/OneDrive/Desktop/AB/MLOPS/travel_capstone/mlruns/0/f935dd90329c44a5bc6f7c5951e5d1e7/artifacts
+end_time: 1739794482903
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f935dd90329c44a5bc6f7c5951e5d1e7
+run_name: Linear Regression
+run_uuid: f935dd90329c44a5bc6f7c5951e5d1e7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739794478318
+status: 3
+tags: []
+user_id: aparn
