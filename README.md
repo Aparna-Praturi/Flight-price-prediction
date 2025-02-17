@@ -28,7 +28,7 @@ travel-capstone/
 │-- Flask_price-prediction
 │   │-- Dockerfile               # Docker configuration for Flask API
 │   │-- requirements.txt         # Dependencies
-|   |--app.py                    # flask app
+|   |-- app.py                   # flask app
 |   |--service.yaml
 |-- Gender_classification-streamlit/
 |   |-- gender_app.py            # streamlit app for gender classification
@@ -54,6 +54,8 @@ travel-capstone/
 
 ### Steps to Run
 
+
+
 #### 1. Clone the repository
 
 git clone https://github.com/Aparna-Praturi/Flight-price-prediction.git
@@ -61,37 +63,43 @@ git clone https://github.com/Aparna-Praturi/Flight-price-prediction.git
 
 #### 2. Build and run Docker container for Flask app
 
+```
 cd Flight-price-prediction
 docker build -t flight_price_prediction:latest -f  Flask_Price-prediction/Dockerfile .      
 docker run  -p 5000:5000 flight_price_prediction:latest
 
+```
+
 #### 3. Deploy on Kubernetes
 
+```
 minikube start   
 kubectl apply -f Deployment.yaml
 kubectl apply -f service.yaml
 minikube tunnel         # In another terminal
-http://127.0.0.1 
+http://127.0.0.1
+
+```
 
 #### 4. Set up Airflow DAGs from airflow docker image
-
+```
 cd Airflow_Price-prediction
 docker compose -f 'Airflow_Price-prediction\Docker-compose.yml' up -d --build 
-
+```
 #### 5. Start MLflow 
-
+```
 python MLFlow_Price-prediction\mlflow-script.py    
-`
+```
 #### 6. Run Streamlit Apps
 
 For gender identification:
-
+```
 streamlit run Gender_classification_Streamlit\gender_app.py
-
+```
 For hotel recommendations:
-
+```
 streamlit run Hotel_recommendation_Streamlit\hotel_app.py  
-
+```
 
 
 
