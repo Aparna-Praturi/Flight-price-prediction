@@ -1,0 +1,16 @@
+aliases: []
+creation_timestamp: 1739777641846
+current_stage: None
+description: ''
+last_updated_timestamp: 1739777641846
+name: Price predictor
+run_id: 08994a351dbc4634a71d7afed7a29b12
+run_link: ''
+source: file:///C:/Users/aparn/OneDrive/Desktop/AB/MLOPS/travel_capstone/mlruns/0/08994a351dbc4634a71d7afed7a29b12/artifacts/Decision
+  Tree
+status: READY
+status_message: null
+storage_location: file:///C:/Users/aparn/OneDrive/Desktop/AB/MLOPS/travel_capstone/mlruns/0/08994a351dbc4634a71d7afed7a29b12/artifacts/Decision
+  Tree
+user_id: null
+version: 1

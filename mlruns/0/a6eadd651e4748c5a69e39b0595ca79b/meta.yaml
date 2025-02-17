@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/aparn/OneDrive/Desktop/AB/MLOPS/travel_capstone/mlruns/0/a6eadd651e4748c5a69e39b0595ca79b/artifacts
+end_time: 1739777364784
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a6eadd651e4748c5a69e39b0595ca79b
+run_name: Ridge Regression
+run_uuid: a6eadd651e4748c5a69e39b0595ca79b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739777359922
+status: 3
+tags: []
+user_id: aparn

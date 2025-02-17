@@ -5,6 +5,7 @@ import os
 import sys
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 from sklearn.preprocessing import OrdinalEncoder
 from sklearn.metrics.pairwise import cosine_similarity
 import streamlit as st
@@ -54,22 +55,7 @@ df_users1.rename(columns = {'code':'userCode'}, inplace = True)
 
 # join df_hotels and df_users1
 df = pd.merge(df_hotels, df_users1, on='userCode')
-#print(df.head())
 
-# Dataset Rows & Columns count
-print(f'df shape:{df.shape}')
-
-# Dataset Information
-print(f'df_info:{df.info()}')
-
-# Duplicate Values
-print(f'Duplicate values:{df.duplicated().sum()}')
-
-# Missing Values/Null Values
-print(f'Missing values:{df.isna().sum()}')
-
-# Check Unique Values for each variable.
-print(f'{[df[i].nunique() for i in df.columns]}')
 
 # create user-hotel interaction matrix
 user_hotel_matrix = df.groupby(['userCode','hotelName'])['days'].sum().unstack()
@@ -85,13 +71,13 @@ Q1, Q2, Q3 = df['price'].quantile([0.25, 0.5, 0.75])
 df['price_quartile'] = pd.qcut(df['price'], q=4, labels=False)
 
 # create user feature matrix
-user_features = ['age', 'encoded_gender','days', 'price_quartile']
+user_features = ['age', 'encoded_gender', 'price_quartile']
 df_user_features = df[user_features]
-user_feature_matrix = df.groupby('userCode').agg({'days': 'mean','price_quartile': 'mean','age': 'first', 'encoded_gender':'first'}).reset_index('userCode')
+user_feature_matrix = df.groupby('userCode').agg({'price_quartile': 'mean','age': 'first', 'encoded_gender':'first'}).reset_index('userCode')
 user_features = user_feature_matrix.set_index('userCode')
 
 
-def recommend_hotels(age, gender, days, price, user_features, user_hotel_matrix, destination):
+def recommend_hotels(age, gender, price, user_features, user_hotel_matrix, destination):
    
    # prepare data
    encoded_gender = cat_encoder.transform(np.array([gender]).reshape(-1, 1))
@@ -107,7 +93,7 @@ def recommend_hotels(age, gender, days, price, user_features, user_hotel_matrix,
         price_quartile =  4
 
    en_gender =  encoded_gender.flatten()
-   target_user= [age, en_gender.item(), days, price_quartile]
+   target_user= [age, en_gender.item(),  price_quartile]
   
    reshaped_target_user = np.array(target_user).reshape(1, -1)
 
@@ -134,15 +120,50 @@ def recommend_hotels(age, gender, days, price, user_features, user_hotel_matrix,
    return best_hotel, hotel_places.item()
 
 # Streamlit UI
-st.set_page_config(page_title="Hotel Recommendation", layout="wide")
+st.set_page_config(page_title="Hotel Recommendation")
 
 # Title of the app
-st.title("Hotel Recommendation System")
+st.markdown("<h1 style='text-align: center; font-size: 40px;'>Hotel Recommendation System</h1>", unsafe_allow_html=True)
+st.markdown("<h3 style='font-size: 20px;'>Here are price visualisations to help you make your choice:</h3>", unsafe_allow_html=True)
+
+## plot the data visualisations
+
+# Calculate the average price per city
+avg_price_per_city = df.groupby('place')['price'].mean().reset_index()
+
+# Count hotels in each price quartile
+price_quartile_counts = df['price_quartile'].value_counts()
+
+# Map the quartiles to labels
+quartile_labels = ['Low', 'Mid-Low', 'Mid-High', 'High']
+
+# Plot
+fig, axs = plt.subplots(1, 2, figsize=(14, 8))  # Increased figure size further
+
+# Bar chart for average price of hotels
+axs[0].barh(avg_price_per_city['place'], avg_price_per_city['price'], color='skyblue')
+axs[0].set_title('Average Price of Hotels per City', fontsize=14)
+axs[0].set_xlabel('City', fontsize=9)
+axs[0].set_ylabel('Average Price per Night (USD)', fontsize=12)
+axs[0].tick_params(axis='x', rotation=0, labelsize=12)  # Adjust label size
+axs[0].tick_params(axis='y', labelsize=12)  # Adjust label size
+
+# Pie chart for hotel price distribution across quartiles
+axs[1].pie(price_quartile_counts, labels=quartile_labels, autopct='%1.1f%%', startangle=90, 
+           colors=['#ff9999','#66b3ff','#99ff99','#ffcc99'], textprops={'fontsize': 12})
+axs[1].set_title('Hotel Price Distribution Across Quartiles', fontsize=14)
+
+# Adjust layout to make sure subplots are not overlapping
+fig.subplots_adjust(left=0.1, right=0.9, top=0.9, bottom=0.1)  # Manually adjust spacing
+
+# Display the figure in Streamlit
+st.pyplot(fig)
+
+## Data entry
 
 # Dropdown for Destination
 destinations = df['place'].unique().tolist()
 destination = st.selectbox("Select your Destination", destinations)
-
 #  Date input for Check-in and Check-out
 checkin_date = st.date_input("Check-in Date", datetime.today())
 checkout_date = st.date_input("Check-out Date", datetime.today())
@@ -167,17 +188,19 @@ min_price = float(min(df['price']))
 max_price = float(max(df['price']))  
 price = st.slider("Select your Price per Night (USD)", min_price, max_price, float(max_price))
 
-# Show selected inputs
+## Show selected inputs
+st.markdown("<h4 style='font-size: 20px;'>You have enterd:</h4>", unsafe_allow_html=True)
 st.write(f"Destination: {destination}")
-st.write(f"no.of days: {days}")
+#st.write(f"no.of days: {days}")
 st.write(f"Age: {age}")
 st.write(f"Maximum Price: ${price}")
 st.write(f"Gender: {gender}")
 
-# Recommend hotels based on user input
+## Recommend hotels based on user input
 if st.button('Recommend Hotels'):
-     recommended_hotel, place = recommend_hotels(age, gender, days, price, user_features, user_hotel_matrix, destination)
-     st.write(f"Recommended Hotels:{recommended_hotel} at {place}")
+     recommended_hotel, place = recommend_hotels(age, gender, price, user_features, user_hotel_matrix, destination)
+     
+     st.markdown(f"<h3 style='font-size: 20px;'>Recommended Hotel: {recommended_hotel} at {place}", unsafe_allow_html=True)
      
 
 
