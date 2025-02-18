@@ -59,6 +59,7 @@ travel-capstone/
 #### 1. Clone the repository
 
 git clone https://github.com/Aparna-Praturi/Flight-price-prediction.git
+pip install requirements.txt
 
 
 #### 2. Build and run Docker container for Flask app
